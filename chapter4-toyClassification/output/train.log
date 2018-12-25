@@ -1,0 +1,41 @@
+Namespace(batch_size=64, gpus='0', lr=0.1, num_classes=10, num_epoch=10, save_name='LeNet', save_result='output/')
+Epoch[0] Train-accuracy=0.932030
+Epoch[0] Time cost=5.119
+Saved checkpoint to "output/LeNet-0001.params"
+Epoch[0] Validation-accuracy=0.979467
+Epoch[1] Train-accuracy=0.979172
+Epoch[1] Time cost=5.207
+Saved checkpoint to "output/LeNet-0002.params"
+Epoch[1] Validation-accuracy=0.985877
+Epoch[2] Train-accuracy=0.984992
+Epoch[2] Time cost=5.078
+Saved checkpoint to "output/LeNet-0003.params"
+Epoch[2] Validation-accuracy=0.986478
+Epoch[3] Train-accuracy=0.988694
+Epoch[3] Time cost=5.829
+Saved checkpoint to "output/LeNet-0004.params"
+Epoch[3] Validation-accuracy=0.987079
+Epoch[4] Train-accuracy=0.991245
+Epoch[4] Time cost=4.953
+Saved checkpoint to "output/LeNet-0005.params"
+Epoch[4] Validation-accuracy=0.987780
+Epoch[5] Train-accuracy=0.993230
+Epoch[5] Time cost=5.729
+Saved checkpoint to "output/LeNet-0006.params"
+Epoch[5] Validation-accuracy=0.986679
+Epoch[6] Train-accuracy=0.994564
+Epoch[6] Time cost=5.718
+Saved checkpoint to "output/LeNet-0007.params"
+Epoch[6] Validation-accuracy=0.987881
+Epoch[7] Train-accuracy=0.995481
+Epoch[7] Time cost=6.007
+Saved checkpoint to "output/LeNet-0008.params"
+Epoch[7] Validation-accuracy=0.988882
+Epoch[8] Train-accuracy=0.996131
+Epoch[8] Time cost=5.289
+Saved checkpoint to "output/LeNet-0009.params"
+Epoch[8] Validation-accuracy=0.988381
+Epoch[9] Train-accuracy=0.996231
+Epoch[9] Time cost=5.272
+Saved checkpoint to "output/LeNet-0010.params"
+Epoch[9] Validation-accuracy=0.988682
