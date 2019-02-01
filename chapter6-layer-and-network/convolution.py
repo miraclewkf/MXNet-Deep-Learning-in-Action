@@ -10,8 +10,8 @@ bias = mx.nd.ones(2)
 print("Convolution bias:")
 print(bias)
 output_data = mx.nd.Convolution(data=input_data, weight=weight, bias=bias, 
-	                            kernel=(3,3), stride=(1,1), pad=(0,0), 
-	                            dilate=(1,1), num_filter=2, num_group=1)
+                                kernel=(3,3), stride=(1,1), pad=(0,0), 
+                                dilate=(1,1), num_filter=2, num_group=1)
 print("Regular convolution result:")
 print(output_data)
 output_data_dilate = mx.nd.Convolution(data=input_data, weight=weight, bias=bias,

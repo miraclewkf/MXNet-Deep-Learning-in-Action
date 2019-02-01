@@ -24,4 +24,3 @@ for i in range(4):
     plt.subplot(1,4,i+1)
     plt.imshow(save_image)
 plt.savefig('image_sample_rec.jpg')
-plt.show()

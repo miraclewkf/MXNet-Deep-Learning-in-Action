@@ -10,13 +10,17 @@ def get_network(num_classes):
     LeNet
     """
     data = mx.sym.Variable("data")
-    conv1 = mx.sym.Convolution(data=data, kernel=(5,5), num_filter=6, name="conv1")
+    conv1 = mx.sym.Convolution(data=data, kernel=(5,5), num_filter=6, 
+                               name="conv1")
     relu1 = mx.sym.Activation(data=conv1, act_type="relu", name="relu1")
-    pool1 = mx.sym.Pooling(data=relu1, kernel=(2,2), stride=(2,2),  pool_type="max", name="pool1")
+    pool1 = mx.sym.Pooling(data=relu1, kernel=(2,2), stride=(2,2), 
+                           pool_type="max", name="pool1")
 
-    conv2 = mx.sym.Convolution(data=pool1, kernel=(5, 5), num_filter=16, name="conv2")
+    conv2 = mx.sym.Convolution(data=pool1, kernel=(5, 5), num_filter=16, 
+                               name="conv2")
     relu2 = mx.sym.Activation(data=conv2, act_type="relu", name="relu2")
-    pool2 = mx.sym.Pooling(data=relu2, kernel=(2, 2), stride=(2, 2), pool_type="max", name="pool2")
+    pool2 = mx.sym.Pooling(data=relu2, kernel=(2, 2), stride=(2, 2), 
+                           pool_type="max", name="pool2")
 
     fc1 = mx.sym.FullyConnected(data=pool2, num_hidden=120, name="fc1")
     relu3 = mx.sym.Activation(data=fc1, act_type="relu", name="relu3")
@@ -63,8 +67,7 @@ if __name__ == '__main__':
     # get network(symbol)
     sym = get_network(num_classes=args.num_classes)
 
-    optimizer_params = {
-        'learning_rate': args.lr}
+    optimizer_params = {'learning_rate': args.lr}
     initializer = mx.init.Xavier(rnd_type='gaussian', factor_type="in", 
                                  magnitude=2)
 

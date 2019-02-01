@@ -9,6 +9,6 @@ bias = mx.nd.ones(4)
 print("FullyConnected bias:")
 print(bias)
 out_data = mx.nd.FullyConnected(data=input_data, weight=weight, bias=bias, 
-	                            num_hidden=4, flatten=1)
+	                        num_hidden=4, flatten=1)
 print("FullyConnected result:")
 print(out_data)

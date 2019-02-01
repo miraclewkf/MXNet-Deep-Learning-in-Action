@@ -20,7 +20,6 @@ for i in range(4):
     plt.subplot(1,4,i+1)
     plt.imshow(save_image)
 plt.savefig('image_sample.jpg')
-plt.show()
 
 train_data = mx.image.ImageIter(batch_size=32,
                                 data_shape=(3, 224, 224),

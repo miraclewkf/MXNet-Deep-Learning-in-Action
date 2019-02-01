@@ -10,7 +10,6 @@ if __name__ == '__main__':
     plt.imshow(data.asnumpy())
     plt.savefig('{}_original.png'.format(image_name))
 
-    # class
     shorterResize = mx.image.ResizeAug(size=224)
     shorterResize_data = shorterResize(data)
     print("Shape of data:{}".format(shorterResize_data.shape))
@@ -34,16 +33,3 @@ if __name__ == '__main__':
     print("Shape of data:{}".format(forceResize_data.shape))
     plt.imshow(forceResize_data.asnumpy())
     plt.savefig('{}_forceResize_diff.png'.format(image_name))
-
-    '''
-    # function
-    shorter_resize_data = mx.image.resize_short(data, 224)
-    print("Shape of data:{}".format(shorter_resize_data.shape))
-    plt.imshow(shorter_resize_data.asnumpy())
-    plt.savefig('{}_shorter_resize.png'.format(image))
-
-    force_resize_data = mx.nd._internal._cvimresize(data, 224, 224)
-    print("Shape of data:{}".format(force_resize_data.shape))
-    plt.imshow(force_resize_data.asnumpy())
-    plt.savefig('{}_force_resize.png'.format(image_name))
-    '''
