@@ -17,9 +17,9 @@
 * 第12章 GluonCV
 
 #### 本书部分代码及内容参考了如下资料，特此注明：
-* MXNet官方源码：[MXNet](https://github.com/apache/incubator-mxnet)
+* MXNet官方源码：[MXNet](https://github.com/apache/incubator-mxnet)。
 * MXNet官方关于SSD算法的实现：[SSD](https://github.com/apache/incubator-mxnet/tree/master/example/ssd)。
 * MXNet官方关于FCN算法的实现：[FCN](//github.com/apache/incubator-mxnet/tree/master/example/fcn-xs)。
 * Gluon快速上手教程：[Gluon](https://beta.mxnet.io/guide/crash-course/index.html)。
 * GluonCV库，一个非常棒的复现计算机视觉前沿算法的工具库：[GluonCV](https://gluon-cv.mxnet.io/)。
-* 《动手学习深度学习》，中文书籍，讲解过程深入浅出，非常值得读者学习：[书籍地址](https://zh.gluon.ai/)。
+* 《动手学深度学习》，中文书籍，讲解过程深入浅出，非常值得读者学习：[书籍地址](https://zh.gluon.ai/)。
