@@ -16,7 +16,7 @@
 * 第11章 Gluon
 * 第12章 GluonCV
 
-##### 本书部分代码及内容参考了如下资料，特此注明：
+#### 本书部分代码及内容参考了如下资料，特此注明：
 * MXNet官方源码：[MXNet](https://github.com/apache/incubator-mxnet)
 * MXNet官方关于SSD算法的实现：[SSD](https://github.com/apache/incubator-mxnet/tree/master/example/ssd)。
 * MXNet官方关于FCN算法的实现：[FCN](//github.com/apache/incubator-mxnet/tree/master/example/fcn-xs)。
