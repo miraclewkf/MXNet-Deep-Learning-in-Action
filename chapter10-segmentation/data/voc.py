@@ -1,17 +1,18 @@
 import mxnet as mx
 from PIL import Image
 import os
+import numpy as np
 
 class VocSegData(mx.io.DataIter):
     def __init__(self, data_dir, lst_name, rgb_mean,
-                 batch_size=1, data_name='data', label_name='softmax_label'):
+                 batch_size=1):
         super(VocSegData, self).__init__()
         self.data_dir = data_dir
         self.lst_name = lst_name
         self.rgb_mean = rgb_mean
         self.batch_size = batch_size
-        self.data_name = data_name
-        self.label_name = label_name
+        self.data_name = 'data'
+        self.label_name = 'softmax_label'
         self.cursor = -self.batch_size
         lst_path = os.path.join(data_dir, lst_name)
         self.num_data = len(open(lst_path, 'r').readlines())
@@ -23,15 +24,18 @@ class VocSegData(mx.io.DataIter):
         sample = self.data_file.readline().strip()
         index, img_path, label_path = sample.split("\t")
         img = Image.open(os.path.join(self.data_dir, img_path))
+        mask = Image.open(os.path.join(self.data_dir, label_path))
+
         data = mx.nd.array(img, dtype='float32')
         data = data - mx.nd.array(self.rgb_mean).reshape((1, 1, 3))
         data = mx.nd.transpose(data, axes=(2, 0, 1))
         data = mx.nd.expand_dims(data, axis=0)
 
-        label = Image.open(os.path.join(self.data_dir, label_path))
-        label = mx.nd.array(label)
-        label = mx.nd.expand_dims(label, axis=0)
-        return list([(self.data_name, data)]), list([(self.label_name, label)])
+        target = np.array(mask).astype('int32')
+        target[target == 255] = -1
+        target = mx.nd.expand_dims(mx.nd.array(target), axis=0)
+        return [list([(self.data_name, data)]),
+                list([(self.label_name, target)])]
 
     @property
     def provide_data(self):
