@@ -12,6 +12,6 @@
 
 * 这一节介绍SSD算法的代码实现，主要包括网络结构构建、数据读取和训练评价指标定义。
 
-* 预训练模型VGG下载地址：[GoogleDrive](https://drive.google.com/open?id=1W-4xGKJZbHCZXIZY4fXfSekoQ2sE3-Ty)
+* 预训练模型VGG下载地址：[GoogleDrive](https://drive.google.com/open?id=1W-4xGKJZbHCZXIZY4fXfSekoQ2sE3-Ty) or [BaiDuYun](https://pan.baidu.com/s/1TAIPxjdbrcXBM47wdtE2xA)(提取码: uvcw)
 
-* 整合版PASCAL VOC数据集下载地址：[GoogleDrive](https://drive.google.com/open?id=18nEPwcQPNidduu6EIlrI4LsHvvpKnLxD)
+* 整合版PASCAL VOC数据集下载地址：[GoogleDrive](https://drive.google.com/open?id=18nEPwcQPNidduu6EIlrI4LsHvvpKnLxD) or [BaiDuYun](https://pan.baidu.com/s/1o3PE3x2b7Vt4gIWuHtDdyA)(提取码: h77n)

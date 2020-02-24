@@ -12,4 +12,4 @@
 
 * 以CIFAR10数据集为例实现图像分类。
 
-* 训练得到的模型`ResNet18-4.params`可以从[GoogleDrive](https://drive.google.com/open?id=1kkKC8DibnuqihJzCVvAzJRwpwCsMpCLS)下载。
+* 训练得到的模型`ResNet18-4.params`可以从[GoogleDrive](https://drive.google.com/open?id=1kkKC8DibnuqihJzCVvAzJRwpwCsMpCLS) or [BaiDuYun](https://pan.baidu.com/s/1O6Yf0r41RRTeZd6zWyomxw)(提取码: qe94)下载。

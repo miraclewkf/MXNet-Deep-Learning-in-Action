@@ -12,4 +12,4 @@
 
 * 这一节介绍FCN算法的代码实现，主要包括网络结构构建、数据读取和评价指标定义。
 
-* 预训练模型VGG下载地址：[GoogleDrive](https://drive.google.com/open?id=1Q21I53tcvyEYgYy2PuSbJcbUszJQrv3q)
+* 预训练模型VGG下载地址：[GoogleDrive](https://drive.google.com/open?id=1Q21I53tcvyEYgYy2PuSbJcbUszJQrv3q) or [BaiDuYun](https://pan.baidu.com/s/1FCi2ahZQthT0qe3oV_CZZQ)(提取码: 8pvi)
